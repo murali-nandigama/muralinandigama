@@ -234,6 +234,13 @@ body {
 *::after {
   box-sizing: inherit;
 }
+h1, h2, .site-title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: 700; /* Bold for emphasis, like NYT headlines */
+    font-size: 2.5em; /* Adjust size as needed */
+    line-height: 1.2; /* NYT uses tight line spacing */
+    color: #000; /* Black for classic NYT look */
+}
 
 /* Typography */
 h1,
