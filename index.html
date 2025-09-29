@@ -9,6 +9,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+    /* Make the card stretch horizontally */
+    .achievement-card.card {
+      width: 100%;          /* full width */
+      max-width: 100%;      /* prevent max limit */
+      box-sizing: border-box;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      margin-bottom: 20px;
+    }
+
+    /* Body inside the card */
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Icon container stretch and layout */
+    .achievement-icon {
+      display: flex;
+      gap: 20px;
+      font-size: 48px;
+      color: #333;
+      flex-wrap: nowrap; /* keep icons in a single line */
+    }
+
+    /* For responsiveness, allow wrapping on smaller screens */
+    @media (max-width: 480px) {
+      .achievement-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
     <!-- Navigation -->
